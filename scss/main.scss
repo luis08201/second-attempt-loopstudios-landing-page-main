@@ -83,6 +83,7 @@ $VeryDarkGray: hsl(0, 0%, 41%);
 
         &__nav{
             position:fixed;
+            z-index: 999;
             top:0;
             left:-900px;
             background-color: #000;
