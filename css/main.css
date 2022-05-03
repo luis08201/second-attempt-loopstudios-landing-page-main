@@ -26,6 +26,9 @@ li {
 
 :root {
   --padding:0 27px;
+  --margin:0 auto;
+  --width:100%;
+  --max-width:1200px;
 }
 
 .header {
@@ -294,20 +297,21 @@ li {
 
 @media screen and (min-width: 992px) {
   .header-top {
-    max-width: 1100px;
-    width: 100%;
-    margin: 0 auto;
+    max-width: var(--max-width);
+    width: var(--width);
+    padding: var(--padding);
+    margin: var(--margin);
     margin-top: 50px;
   }
   .header-home {
-    max-width: 1100px;
-    width: 100%;
-    margin: 0 auto;
+    max-width: var(--max-width);
+    width: var(--width);
+    padding: var(--padding);
+    margin: var(--margin);
     margin-top: 175px;
   }
   .header-home__description {
     width: 500px;
-    padding-left: 0;
   }
 }
 
@@ -388,9 +392,10 @@ li {
 
 @media screen and (min-width: 992px) {
   .vr {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
+    max-width: var(--max-width);
+    width: var(--width);
+    padding: var(--padding);
+    margin: var(--margin);
     margin-top: 115px;
   }
   .vr-article {
@@ -622,9 +627,10 @@ li {
 
 @media screen and (min-width: 992px) {
   .our-creations {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
+    max-width: var(--max-width);
+    width: var(--width);
+    padding: var(--padding);
+    margin: var(--margin);
     margin-top: 130px;
     margin-bottom: 80px;
   }
@@ -868,9 +874,10 @@ li {
 
 @media screen and (min-width: 992px) {
   .footer__main {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
+    max-width: var(--max-width);
+    width: var(--width);
+    padding: var(--padding);
+    margin: var(--margin);
   }
 }
 /*# sourceMappingURL=main.css.map */

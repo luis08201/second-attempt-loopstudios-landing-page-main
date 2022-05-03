@@ -28,7 +28,10 @@ li{
 }
 
 :root{
-    --padding:0 27px;    
+    --padding:0 27px;
+    --margin:0 auto;
+    --width:100%;
+    --max-width:1200px;
 }
 
 $White: hsl(0, 0%, 100%);
@@ -272,21 +275,22 @@ $VeryDarkGray: hsl(0, 0%, 41%);
 
     @media screen and (min-width:992px){
         &-top{
-            max-width:1100px;
-            width:100%;
-            margin:0 auto;
+            max-width: var(--max-width);
+            width:var(--width);
+            padding:var(--padding);
+            margin:var(--margin);
             margin-top:50px;
         }        
         
         &-home{
-            max-width:1100px;
-            width:100%;
-            margin:0 auto ;
+            max-width: var(--max-width);
+            width:var(--width);
+            padding:var(--padding);
+            margin:var(--margin);
             margin-top: 175px;
 
             &__description{
                 width:500px;
-                padding-left: 0;
             }
         }
     }
@@ -359,9 +363,10 @@ $VeryDarkGray: hsl(0, 0%, 41%);
     }
 
     @media screen and (min-width:992px){
-        max-width:1200px;
-        width:100%;
-        margin:0 auto;
+    max-width: var(--max-width);
+    width:var(--width);
+    padding:var(--padding);
+    margin:var(--margin);
         margin-top: 115px;
         &-article {
             width:500px;
@@ -555,9 +560,10 @@ $VeryDarkGray: hsl(0, 0%, 41%);
     }
 
     @media screen and (min-width:992px) {
-        max-width:1200px;
-        width:100%;
-        margin:0 auto;
+    max-width: var(--max-width);
+    width:var(--width);
+    padding:var(--padding);
+    margin:var(--margin);
         margin-top: 130px;
         margin-bottom: 80px;
         
@@ -759,9 +765,10 @@ $VeryDarkGray: hsl(0, 0%, 41%);
 
     @media screen and (min-width:992px) {
         &__main{
-            max-width:1200px;
-            width:100%;
-            margin:0 auto;
+        max-width: var(--max-width);
+        width:var(--width);
+        padding:var(--padding);
+        margin:var(--margin);
         }
     }
 }
